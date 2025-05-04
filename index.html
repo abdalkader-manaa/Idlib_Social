@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/50f385f89f.js" crossorigin="anonymous"></script>
+    <title>Idlib-Social</title>
+</head>
+
+<body>
+    <!-- ============================= Nav Section ============================= -->
+    <nav>
+        <div class="container">
+            <p class="logo text-bold">Idlib-Social</p>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search-input" placeholder="Search For Creators, posts and people">
+            </div>
+            <div class="create">
+                <button class="btn btn-primary">Create</button>
+                <div class="profile">
+                    <img src="images/profile.jpg" alt="#">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- =========================== Main Section ================================ -->
+    <main>
+        <div class="container">
+            <!-- ---------------- Left Side ---------------- -->
+            <div class="left">
+                <div class="profile">
+                    <div class="picture-profile">
+                        <img src="images/profile.jpg" alt="#">
+                    </div>
+                    <div class="profile-text">
+                        <h5>Abdalkader Manaa</h5>
+                        <span class="text-muted">@Abdalkader</span>
+                    </div>
+                </div>
+                <div class="side-bar">
+                    <div class="menu-item active">
+                        <i class="fa-solid fa-house"></i>
+                        <p> Home</p>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-compass"></i>
+                        <p>Explore</p>
+                    </div>
+                    <div class="menu-item " onclick="openNotification()">
+                        <i class="fa-solid fa-bell"><span>9</span></i>
+                        <p>Notifications</p>
+                        <div class="notification-list">
+                            <div class="notification">
+                                <div class="image">
+                                    <img src="images/nadeem_1.jpg" alt="#">
+                                </div>
+                                <div class="info">
+                                    <p><b>Nadeem Batal</b> accepted your friend request</p>
+                                    <small>1 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <div class="image">
+                                    <img src="images/muotasem_1.jpg" alt="#">
+                                </div>
+                                <div class="info">
+                                    <p><b>Muotasem </b> and 3 others like your post</p>
+                                    <small>2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <div class="image">
+                                    <img src="images/abdalhmed_1.jpg" alt="#">
+                                </div>
+                                <div class="info">
+                                    <p><b>Abdalhmed KA</b> commented on your post</p>
+                                    <small>2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <div class="image">
+                                    <img src="images/osama_1.jpg" alt="#">
+                                </div>
+                                <div class="info">
+                                    <p><b>Osama Mohamed</b> send to you a friend request</p>
+                                    <small>2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <div class="image">
+                                    <img src="images/kamal_1.jpg" alt="#">
+                                </div>
+                                <div class="info">
+                                    <p><b>Kamal Swed</b> accepted your friend request</p>
+                                    <small>2 DAYS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" onclick="messagesFocus()">
+                        <i class="fa-solid fa-message"><span>5</span></i>
+                        <p>Message</p>
+
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <p>BookMarks</p>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <p>Analytics</p>
+                    </div>
+                    <div class="menu-item" onclick="openTheme()">
+                        <i class="fa-solid fa-palette"></i>
+                        <p>Theme</p>
+
+                    </div>
+                    <div class="menu-item ">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Settings</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Create</button>
+            </div>
+            <!-- ------------------- Middle ----------------------- -->
+            <div class="middle">
+                <!-- ------------ Stories ------------ -->
+                <div class="stories">
+                    <div class="story">
+                        <img src="images/nadeem_1.jpg" alt="#" class="profile-image">
+                        <p>Nadeem Batal</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/muotasem_1.jpg" alt="#" class="profile-image">
+                        <p>Muotasem Hag Latouf</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/kamal_1.jpg" alt="#" class="profile-image">
+                        <p>Kamal Swed</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/abdalhmed_1.jpg" alt="#" class="profile-image">
+                        <p>Abdalhmed Ka</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/osama_1.jpg" alt="#" class="profile-image">
+                        <p>Osama Mohamed</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/sweet_1.jpg" alt="#" class="profile-image">
+                        <p>Oriental Sweets</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/enjoy_1.jpg" alt="#" class="profile-image">
+                        <p>Enjoy Coffee</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/sweet_1.jpg" alt="#" class="profile-image">
+                        <p>Enjoy Coffee</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/mohamad_1.jpg" alt="#" class="profile-image">
+                        <p>Mohamed Sh</p>
+                    </div>
+                </div>
+                <!-- -------------- Create Post --------------- -->
+                <div class="create-post">
+                    <div class="profile-picture">
+                        <img src="images/profile.jpg" alt="#">
+                        <input type="text" onblur="removeClass()" placeholder="What's on your mind, Abdalkader?">
+                    </div>
+
+                    <button class="btn btn-primary">Post</button>
+                </div>
+                <!-- --------------- Posts ---------------- -->
+                <div class="posts">
+                    <div class="post">
+                        <!-- ---------- Header Post -->
+                        <div class="header-post">
+                            <div class="profile-info">
+                                <img src="images/zawaq_1.jpg" alt="#">
+                                <div class="info">
+                                    <h4>ZAWAQ CHICKEN</h4>
+                                    <small>Idlib 30 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <!-- ---------- Image Post ------------>
+                        <div class="image-post">
+                            <img src="images/zawaq_2.jpg" alt="#">
+                        </div>
+                        <div class="actions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <!-- ----------- Counters ---------- -->
+                        <div class="counters">
+                            <div class="likes-counter">
+                                <div class="images">
+                                    <img src="images/osama_1.jpg" alt="#">
+                                    <img src="images/abdalhmed_1.jpg" alt="#">
+                                    <img src="images/profile.jpg" alt="#">
+                                </div>
+                                <span>Liked by <b>Abdalkader M Manaa</b> and <b>3,842 others</b></span>
+                            </div>
+                            <p><b>Abdalkader M Manaa</b> It's a delicious meal,
+                                <b></b>
+                                <span>View all 1238 comments</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <!-- ---------- Header Post -->
+                        <div class="header-post">
+                            <div class="profile-info">
+                                <img src="images/osama_1.jpg" alt="#">
+                                <div class="info">
+                                    <h4>Osama Mohamed</h4>
+                                    <small>Idlib 5 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <!-- ---------- Image Post ------------>
+                        <div class="image-post">
+                            <img src="images/osama_2.jpg" alt="#">
+                        </div>
+                        <div class="actions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <!-- ----------- Counters ---------- -->
+                        <div class="counters">
+                            <div class="likes-counter">
+                                <div class="images">
+                                    <img src="images/abdalhmed_1.jpg" alt="#">
+                                    <img src="images/kamal_1.jpg" alt="#">
+                                    <img src="images/muotasem_1.jpg" alt="#">
+                                </div>
+                                <span>Liked by <b>Kamal Swed</b> and <b>473 others</b></span>
+                            </div>
+                            <p><b>Kamal Swed</b> One of the most beautiful podcasts in the world!
+                                <b>#Zero Web School</b>
+                                <span>View all 55 comments</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <!-- ---------- Header Post -->
+                        <div class="header-post">
+                            <div class="profile-info">
+                                <img src="images/sweet_1.jpg" alt="#">
+                                <div class="info">
+                                    <h4>Oriental Sweets</h4>
+                                    <small>Idlib 60 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <!-- ---------- Image Post ------------>
+                        <div class="image-post">
+                            <img src="images/sweet_2.jpg" alt="#">
+                        </div>
+                        <div class="actions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <!-- ----------- Counters ---------- -->
+                        <div class="counters">
+                            <div class="likes-counter">
+                                <div class="images">
+                                    <img src="images/profile.jpg" alt="#">
+                                    <img src="images/osama_1.jpg" alt="#">
+                                    <img src="images/kamal_1.jpg" alt="#">
+                                </div>
+                                <span>Liked by <b>Osama Mohamed</b> and <b>895 others</b></span>
+                            </div>
+                            <p><b>Osama Mohamed</b> Delicious!
+                                <b>#Cookies</b>
+                                <span>View all 2 comments</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <!-- ---------- Header Post -->
+                        <div class="header-post">
+                            <div class="profile-info">
+                                <img src="images/enjoy_1.jpg" alt="#">
+                                <div class="info">
+                                    <h4>Enjoy Coffee</h4>
+                                    <small>Idlib 10 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <!-- ---------- Image Post ------------>
+                        <div class="image-post">
+                            <img src="images/enjoy_2.jpg" alt="#">
+                        </div>
+                        <div class="actions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <!-- ----------- Counters ---------- -->
+                        <div class="counters">
+                            <div class="likes-counter">
+                                <div class="images">
+                                    <img src="images/profile.jpg" alt="#">
+                                    <img src="images/muotasem_1.jpg" alt="#">
+                                    <img src="images/mohamad_1.jpg" alt="#">
+                                </div>
+                                <span>Liked by <b>Mohamed Sh</b> and <b>51,254 others</b></span>
+                            </div>
+                            <p><b>Mohamed Sh</b> This work Good!
+                                <b></b>
+                                <span>View all 486 comments</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <!-- ---------- Header Post -->
+                        <div class="header-post">
+                            <div class="profile-info">
+                                <img src="images/sweet_1.jpg" alt="#">
+                                <div class="info">
+                                    <h4>Enjoy Coffee</h4>
+                                    <small>Idlib JUST NOW</small>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <!-- ---------- Image Post ------------>
+                        <div class="image-post">
+                            <img src="images/sweet_3.jpg" alt="#">
+                        </div>
+                        <div class="actions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <!-- ----------- Counters ---------- -->
+                        <div class="counters">
+                            <div class="likes-counter">
+                                <div class="images">
+                                    <img src="images/muotasem_1.jpg" alt="#">
+                                    <img src="images/kamal_1.jpg" alt="#">
+                                    <img src="images/abdalhmed_1.jpg" alt="#">
+                                </div>
+                                <span>Liked by <b>Abdalhmed Ka</b> and <b>113 others</b></span>
+                            </div>
+                            <p><b>Abdalhmed Ka</b> beautiful picture!   
+                                <b>#Cool</b>
+                                <span>View all 90 comments</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <!-- ---------- Header Post -->
+                        <div class="header-post">
+                            <div class="profile-info">
+                                <img src="images/albal_1.jpg" alt="#">
+                                <div class="info">
+                                    <h4> Albal Coffee</h4>
+                                    <small>NEWYORK 1 WEEKS AGO</small>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <!-- ---------- Image Post ------------>
+                        <div class="image-post">
+                            <img src="images/albal_2.jpg" alt="#">
+                        </div>
+                        <div class="actions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <!-- ----------- Counters ---------- -->
+                        <div class="counters">
+                            <div class="likes-counter">
+                                <div class="images">
+                                    <img src="images/mohamad_1.jpg" alt="#">
+                                    <img src="images//profile.jpg" alt="#">
+                                    <img src="images/abdalhmed_1.jpg" alt="#">
+                                </div>
+                                <span>Liked by <b>Muotasem Hag Latouf</b> and <b>45,012 others</b></span>
+                            </div>
+                            <p><b>Muotasem Hag Latouf</b> Do you remember this picture??
+                                <b>#Coffee</b>
+                                <span>View all 737 comments</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- --------------------- Right Section ---------------------- -->
+            <div class=" right">
+                <!-- ------------ Message -------------- -->
+                <div class="messages-section">
+                    <div class="head">
+                        <h4>Messages</h4>
+                        <div class="icons">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fas fa-times close" onclick="closeMessages()"></i>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="search-input" placeholder="Search Message">
+                    </div>
+                    <div class="taps">
+                        <span class="text-bold active">Primary</span>
+                        <span class="text-bold ">General</span>
+                        <span class="text-bold ">Requests(7)</span>
+                    </div>
+                    <div class="messages">
+                        <div class="message">
+                            <div class="image">
+                                <img src="images/nadeem_1.jpg" alt="#">
+                            </div>
+                            <div class="info">
+                                <h5>Nadeem Batal</h5>
+                                <small>Are u wanna to play?</small>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="image">
+                                <img src="images/mohamad_1.jpg" alt="#">
+                            </div>
+                            <div class="info">
+                                <h5>Mohamed Sh</h5>
+                                <small>Let's go to the course</small>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="image">
+                                <img src="images/kamal_1.jpg" alt="#">
+                                <div class="online"></div>
+                            </div>
+                            <div class="info">
+                                <h5>Kamal Swed</h5>
+                                <small>Ok, Good bye</small>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="image">
+                                <img src="images/muotasem_1.jpg" alt="#">
+                            </div>
+                            <div class="info">
+                                <h5>Muotasem Hag Latouf</h5>
+                                <small>Did you see it before now?</small>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="image">
+                                <img src="images/abdalhmed_1.jpg" alt="#">
+                            </div>
+                            <div class="info">
+                                <h5>Abdalhmed Ka</h5>
+                                <small>I'll go to sleep now</small>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="image">
+                                <img src="images//albal_1.jpg" alt="#">
+                                <div class="online"></div>
+                            </div>
+                            <div class="info">
+                                <h5>Albal Coffee</h5>
+                                <small>Where did you yesterday?</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------ Requests Section ----------------- -->
+                <div class="requests-section">
+                    <p>Requests</p>
+                    <div class="request">
+                        <div class="request-info">
+                            <div class="image">
+                                <img src="images/kamal_1.jpg" alt="#">
+                            </div>
+                            <div class="info">
+                                <h5>Kamal Swed</h5>
+                                <small>2 mutual friends</small>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn ">Reject</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="request-info">
+                            <div class="image">
+                                <img src="images/abdalhmed_1.jpg" alt="#">
+                            </div>
+                            <div class="info">
+                                <h5>Abdalhmed Ka</h5>
+                                <small>105 mutual friends</small>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn ">Reject</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="request-info">
+                            <div class="image">
+                                <img src="images/osama_1.jpg" alt="#">
+                            </div>
+                            <div class="info">
+                                <h5>Osama Mohamed</h5>
+                                <small>496 mutual friends</small>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn ">Reject</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ================= Theme Section =============== -->
+    <div class="theme-customize" ">
+        <div class=" theme">
+        <i class="fas fa-times close" onclick="closeTheme()"></i>
+        <div class="close"></div>
+        <div class="head">
+            <h3>Customize your view</h3>
+            <small>Manage your font size, color, and background</small>
+        </div>
+        <div class="font-size">
+            <h5>Font Size</h5>
+            <div>
+                <p>Aa</p>
+                <div class="progres">
+                    <span></span>
+                    <span></span>
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p>Aa</p>
+            </div>
+        </div>
+        <div class="color">
+            <h5>Color</h5>
+            <div class="color-options">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="background">
+            <h5>Background</h5>
+            <div class="background-options">
+                <div class="light">
+                    <span></span>
+                    <p>Light</p>
+                </div>
+                <div class="Dark">
+                    <span></span>
+                    <p>Dark</p>
+                </div>
+                <div class="Lights-out">
+                    <span></span>
+                    <p>Lights Out</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
